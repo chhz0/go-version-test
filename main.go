@@ -9,6 +9,7 @@ import (
 func main() {
 	info := version.Get()
 
-	fmt.Printf("%s\n", info.Text())
-
+	fmt.Printf("--> string \n %s\n", info.String())
+	fmt.Printf("--> short \n %s\n", info.Short())
+	fmt.Printf("--> text \n %s\n", info.Text())
 }
