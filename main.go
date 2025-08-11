@@ -1,7 +1,14 @@
 package main
 
-import "github.com/chhz0/going/pkg/version"
+import (
+	"fmt"
+
+	"github.com/chhz0/going/pkg/version"
+)
 
 func main() {
-	version.Get()
+	info := version.Get()
+
+	fmt.Printf("%s\n", info.Text())
+
 }
